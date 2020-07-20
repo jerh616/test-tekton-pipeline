@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: Task
 metadata:
-  name: task1
+  name: taskone
 spec:
   steps:
     - name: task-one-step-one
@@ -37,9 +37,9 @@ metadata:
   name: 999-working-logs-long
 spec:
   tasks:
-  - name: task1
+  - name: taskone
     taskRef:
-      name: task1
+      name: taskone
   - name: task2
     retries: 8
     taskRef:
